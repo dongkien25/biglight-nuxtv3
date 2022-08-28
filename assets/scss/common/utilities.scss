@@ -1,0 +1,167 @@
+.text-blue {
+  color: $blue;
+}
+
+.text-color-text {
+  color: var(--text-color);
+}
+.text-color-light {
+  color: var(--text-color-light);
+}
+
+.text-highlight {
+  background: -webkit-linear-gradient(0deg, #f5d8a4, #fac768, #ffa500);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  &:hover {
+    color: currentColor;
+  }
+}
+h1 {
+  font-weight: 700;
+}
+h2,
+h3 {
+  font-weight: 600;
+}
+
+h5{
+  line-height: 1.4
+}
+
+.text-xs {
+  font-size: 12px;
+}
+.text-indent {
+  text-indent: 20px;
+}
+
+.hand-writing {
+  width: 100%;
+  svg {
+    width: 300px;
+    height: 100px;
+    @include media-breakpoint-up(sm) {
+      width: 400px;
+      height: 120px;
+    }
+    @include media-breakpoint-up(md) {
+      width: 500px;
+      height: 150px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 717px;
+      height: 253px;
+    }
+    .mask {
+      fill: none;
+      stroke: #fff;
+    }
+    .first-text {
+      stroke-dasharray: 881;
+      stroke-dashoffset: 881;
+      animation: animate 1s linear 1 forwards;
+    }
+    .second-text {
+      stroke-dasharray: 706;
+      stroke-dashoffset: 706;
+      animation-name: animate;
+      animation-duration: 0.25s;
+      animation-delay: 1s;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+    }
+    .path-text {
+      stroke-dasharray: 878;
+      stroke-dashoffset: 878;
+      animation-name: animate;
+      animation-duration: 0.25s;
+      animation-delay: 1.25s;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+    }
+    .to-text {
+      stroke-dasharray: 497;
+      stroke-dashoffset: 497;
+      animation-name: animate;
+      animation-duration: 0.25s;
+      animation-delay: 1.5s;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+    }
+    .success-text {
+      stroke-dasharray: 883;
+      stroke-dashoffset: 883;
+      animation-name: animate;
+      animation-duration: 0.5s;
+      animation-delay: 1.75s;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+    }
+    .with-text {
+      stroke-dasharray: 833;
+      stroke-dashoffset: 833;
+      animation-name: animate;
+      animation-duration: 1s;
+      animation-delay: 0s;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+    }
+    .biglight-text {
+      stroke-dasharray: 1539;
+      stroke-dashoffset: 1539;
+      animation-name: animate;
+      animation-duration: 1.25s;
+      animation-delay: 0.9s;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+    }
+    .to-lwc-text {
+      stroke-dasharray: 127;
+      stroke-dashoffset: 127;
+      animation-name: animate;
+      animation-duration: 0.5s;
+      animation-delay: 0s;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+    }
+    .smiles-text {
+      stroke-dasharray: 446;
+      stroke-dashoffset: 446;
+      animation-name: animate;
+      animation-duration: 0.5s;
+      animation-delay: 0.5s;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+    }
+    .people-text {
+      stroke-dasharray: 656;
+      stroke-dashoffset: 656;
+      animation-name: animate;
+      animation-duration: 0.5s;
+      animation-delay: 1s;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+    }
+    .places-text {
+      stroke-dasharray: 654;
+      stroke-dashoffset: 654;
+      animation-name: animate;
+      animation-duration: 0.75s;
+      animation-delay: 1.5s;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+    }
+  }
+  @keyframes animate {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}

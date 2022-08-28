@@ -1,0 +1,131 @@
+:root {
+  --primary: #ffa500;
+  --primary-light: #ffe4b3;
+  --primary-blue: #1589ff;
+  --blue-light: #
+  --black: #000;
+  --white: #fff;
+  --text-color: #343434;
+  --text-color-light: rgba(111, 109, 113, 1);
+  --default-layout-header-height: 100px;
+  --account-layout-header-height: 65px;
+  --default-layout-header-width: 1156px;
+  --animate-delay: 1.1s;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url(assets/fonts/Lexend/Lexend-ExtraLight.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url(assets/fonts/Lexend/Lexend-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url(assets/fonts/Lexend/Lexend-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url(assets/fonts/Lexend/Lexend-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url(assets/fonts/Lexend/Lexend-Black.ttf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url(assets/fonts/SegoeUI/SEGOEUI.TTF);
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url(assets/fonts/SegoeUI/SEGUISB.TTF);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url(assets/fonts/SegoeUI/SEGOEUIB.TTF);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url(assets/fonts/SegoeUI/SEGUIBL.TTF);
+  font-weight: 900;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',;
+}
+.biglight-logo {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+//   @include media-breakpoint-up(xxxl) {
+//     width: 90px;
+//     height: 90px;
+//   }
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+// back to top transitions
+
+.top-enter-from,
+.top-leave-to {
+  opacity: 0;
+}
+
+.top-enter-active,
+.top-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+// custom offcanvas
+.offcanvas {
+  max-width: 80%;
+}
+// -----------------------
+.background-highlight {
+  background: #8dc5fc;
+  background: -webkit-linear-gradient(-135deg, #8dc5fc, #ffef92);
+  background: -o-linear-gradient(-135deg, #8dc5fc, #ffef92);
+  background: -moz-linear-gradient(-135deg, #8dc5fc, #ffef92);
+  background: linear-gradient(-135deg, #8dc5fc, #ffef92);
+}
+
+
+
+//tab panel
+.tab-panel {
+  font-weight: 600;
+  text-decoration-thickness: 3px;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  text-underline-offset: 7px;
+  cursor: pointer;
+  color: #1589ff ;
+}
+
+.custom-hr{
+  border-top-width: 2px;
+  border-color: var(--text-color-light);
+}

@@ -1,0 +1,23 @@
+.heading {
+  margin: 32px 0px;
+  position: relative;
+  color: #1589ff !important;
+  background: -webkit-linear-gradient(0deg, #507bf3, #1589ff, #015ebb) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  z-index: 1;
+  // &:after {
+  //   content: '';
+  //   z-index: -1;
+  //   padding: 0 2px;
+  //   width: 99%;
+  //   height: 20px;
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 4px;
+  // border-image-slice: 1;
+  // border-image-source: linear-gradient(to right bottom, #ada5fa, #1589ff);
+  // border-bottom: 20px solid #1589ff;
+  // }
+}

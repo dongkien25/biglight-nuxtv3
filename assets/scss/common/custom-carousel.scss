@@ -1,0 +1,65 @@
+.carousel {
+  &.carousel-small.custom-carousel {
+    width: 100%;
+    padding: 0;
+    padding-top: 40px;
+    @include media-breakpoint-up(sm) {
+      width: 85%;
+      padding-top: 64px;
+    }
+    @include media-breakpoint-up(lg) {
+      padding: 0px;
+      width: 95%;
+    }
+    @include media-breakpoint-up(xl) {
+      padding: 0 42px;
+      width: 85%;
+    }
+    @include media-breakpoint-up(xxl) {
+      padding: 0 10px;
+      width: 95%;
+    }
+    .carousel__item {
+      min-height: 460px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .banner-img {
+        width: 300px;
+        @include media-breakpoint-up(sm) {
+          width: 334px;
+        }
+      }
+    }
+  }
+  &__slide {
+    padding: 24px 0;
+  }
+  &__pagination {
+    &-item &-button {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--primary-light);
+      &--active {
+        background: var(--primary);
+      }
+    }
+  }
+  &.custom-carousel &__prev,
+  &.custom-carousel &__next {
+    background-color: var(--white);
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+  }
+  &.custom-carousel &__icon {
+    fill: var(--primary);
+  }
+  &.custom-carousel &__next {
+    right: 20px;
+  }
+  &.custom-carousel &__prev {
+    left: 20px;
+  }
+}
