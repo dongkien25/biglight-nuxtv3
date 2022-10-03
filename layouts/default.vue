@@ -1,6 +1,5 @@
 <template>
   <div>
-    Default layout
     <layout-the-header></layout-the-header>
     <h1><i class="fa-regular fa-bars"></i> {{ $t("updating") }}</h1>
     <slot />

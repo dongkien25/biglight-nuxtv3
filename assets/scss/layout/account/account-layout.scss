@@ -1,0 +1,57 @@
+@use 'sidebar' as sidebar;
+@use 'header' as header;
+$account-layout-header-height: 80px;
+
+.account-layout {
+  @include font-size($font-size-base);
+  color: var(--text-color);
+  .wrapper {
+    .header-wrapper {
+      @include header.header-wrapper;
+    }
+    .account-wrapper {
+      display: flex;
+      margin-top: var(--account-layout-header-height);
+      .aside-container {
+        @include sidebar.aside-container;
+      }
+      .section-container {
+        width: 100%;
+        margin-top: 0px;
+
+        .account-container {
+          background-color: rgba(242, 243, 247, 1);
+          min-height: 100vh;
+          .card,
+          .accordion-item,
+          .accordion-header {
+            border-width: 0px;
+            border-radius: 8px;
+          }
+          .card {
+            box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .biglight-logo {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    // @include media-breakpoint-up(xxxl) {
+    //   width: 90px;
+    //   height: 90px;
+    // }
+  }
+  .pe-none {
+    background-color: #fcfcfc;
+    opacity: 1;
+    border: none;
+  }
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+}

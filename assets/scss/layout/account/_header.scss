@@ -1,0 +1,9 @@
+@mixin header-wrapper {
+  height: var(--account-layout-header-height);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  background: #b8dcff8f;
+  background: -webkit-linear-gradient(-135deg, #b8dcff8f, #f1e4999c);
+  background: -o-linear-gradient(-135deg, #b8dcff8f, #f1e4999c);
+  background: -moz-linear-gradient(-135deg, #b8dcff8f, #f1e4999c);
+  background: linear-gradient(-135deg, #f1e4999c, #b8dcff8f);
+}

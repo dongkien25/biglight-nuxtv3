@@ -1,26 +1,23 @@
-
 // Override bootstrap variables
-@import 'assets/scss/common/_custom';
-
+@import 'common/_custom';
 // Bootstrap
-@import "bootstrap/scss/bootstrap";
-// @import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap/scss/bootstrap';
+// @import 'bootstrap/scss/utilities/api';
+// @import 'bootstrap/scss/utilities';
+// @import 'bootstrap/scss/bootstrap-utilities';
 
-@import 'normalize.css';
-
-
-@import 'assets/scss/layout/layout';
-@import 'assets/scss/layout/header';
-@import 'assets/scss/layout/footer';
-@import 'assets/scss/layout/sub-footer';
-
-// common components
-@import 'assets/scss/common/cards';
-@import 'assets/scss/common/typo';
-@import 'assets/scss/common/custom-carousel';
-@import 'assets/scss/common/button';
-@import 'assets/scss/common/utilities';
-@import 'assets/scss/common/loading';
-@import 'assets/scss/common/navbar';
-// @import 'app/pages/pages';
-// @import 'app/layout/account/account-layout';
+// @import 'bootstrap/dist/css/bootstrap-utilities.min.css';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'layout/layout';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sub-footer';
+@import 'common/cards';
+@import 'common/typo';
+@import 'common/custom-carousel';
+@import 'common/button';
+@import 'common/utilities';
+@import 'pages/pages';
+@import 'common/loading';
+@import 'common/navbar';
+@import 'layout/account/account-layout';

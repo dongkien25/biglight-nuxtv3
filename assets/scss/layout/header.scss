@@ -1,65 +1,64 @@
 .header-wrapper {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  height: var(--default-layout-header-height);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  left: 0;
+  .header-container {
     display: flex;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--white);
-    height: var(--default-layout-header-height);
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
-    position: fixed;
-    z-index: 99;
-    top: 0;
-    right: 0;
-    left: 0;
-    .header-container {
-      display: flex;
-      justify-content: space-between;
-      // width: 80%;
-  
-      &__list {
-        // display: flex;
-      }
-      .btn-group {
-        .btn.dropdown-toggle.show {
+    justify-content: space-between;
+    // width: 80%;
+
+    &__list {
+      // display: flex;
+    }
+    .btn-group {
+      .btn.dropdown-toggle.show {
+        color: var(--white);
+        &:focus {
+          box-shadow: none;
+        }
+        &:active {
           color: var(--white);
-          &:focus {
-            box-shadow: none;
-          }
-          &:active {
-            color: var(--white);
-          }
         }
       }
-      .dropdown {
-        .dropdown-toggle {
-          &::after {
-            // color: var(--primary);
-          }
-        }
-        .btn {
-          &:hover {
-            border: none;
-          }
-          &:focus {
-            border: none;
-          }
-          &:focus-visible {
-            border: none;
-            outline: none;
-          }
+    }
+    .dropdown {
+      .dropdown-toggle {
+        &::after {
+          // color: var(--primary);
         }
       }
-      .dropdown-menu.show {
-        border: none;
-        box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
-        top: 120% !important;
-        .dropdown-item {
-          &:hover {
-            background-color: var(--primary);
-            color: var(--white);
-          }
+      .btn {
+        &:hover {
+          border: none;
+        }
+        &:focus {
+          border: none;
+        }
+        &:focus-visible {
+          border: none;
+          outline: none;
+        }
+      }
+    }
+    .dropdown-menu.show {
+      border: none;
+      box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+      top: 120% !important;
+      .dropdown-item {
+        &:hover {
+          background-color: var(--primary);
+          color: var(--white);
         }
       }
     }
   }
-  
+}

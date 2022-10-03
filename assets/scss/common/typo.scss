@@ -21,3 +21,10 @@
   // border-bottom: 20px solid #1589ff;
   // }
 }
+.paragraph-dash {
+  list-style: none;
+  &::before {
+    content: '-';
+    padding-right: 5px;
+  }
+}
